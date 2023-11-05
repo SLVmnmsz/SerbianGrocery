@@ -16,12 +16,6 @@ body {
     width: 100%; /* Make the table take full width */
     border-collapse: collapse; /* Remove default spacing between table cells */
 }
-
-.custom-table th,
-.custom-table td {
-    border: 1px solid #000; /* Add borders to cells */
-    padding: 4px; /* Add padding to cells */
-}
 .column1 {
     width: 5%; /* Adjust width of the first column */
     
@@ -50,10 +44,6 @@ header {
     padding: 20px 10px;
 }
 
-main {
-    padding: 20px;
-}
-
 footer {
     background-color: rgb(105, 151, 105); /* Light green background */
     color: #fff;
@@ -62,16 +52,63 @@ footer {
 }
 
 
-
 /* Media queries for responsiveness */
-@media (max-width: 768px) {
-    /* Adjust styles for smaller screens */
-    body {
-        padding: 0 10px; /* Add some padding to the body for smaller screens */
-    }
-
+/* smaller screens */
+@media (max-width: 530px) {
     header, main, footer {
         width: 100%; /* Make header, main, and footer take full width on smaller screens */
         box-sizing: border-box; /* Include padding in the width calculation */
+    }
+    
+    .custom-table {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .custom-table thead {
+        display: none;
+    }
+
+    .custom-table tr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .custom-table td {
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+
+    .custom-table tr > td:first-child {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        border-bottom: none;
+    }
+    .custom-table tr > td:first-child {
+        border-top: 1px solid #000;
+        padding-top: 1rem;
+    }
+    .custom-table tr > td:last-child {
+        border-bottom: 1px solid #000;
+        padding-bottom: 1rem;
+    }
+    .hidden-for-desktop {
+        font-weight: 600;
+    }
+}
+
+/* desktop screen */
+@media (min-width: 531px) {
+    main {
+        padding: 20px;
+    }
+    .hidden-for-desktop {
+        display: none;
+    }
+    .custom-table th,
+    .custom-table td {
+        border: 1px solid #000; /* Add borders to cells */
+        padding: 4px; /* Add padding to cells */
     }
 }
