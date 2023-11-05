@@ -9,8 +9,11 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #b8d6b7; /* Light silver background */
-    color: #333;
+    color: silver;
     margin: 20px;
+}
+.welcomemessage, .tablemessage {
+    color: darkcyan;
 }
 .custom-table {
     width: 100%; /* Make the table take full width */
