@@ -8,7 +8,7 @@ body {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    /*background-color: #b8d6b7; /* Light silver background */
+    /*background-color: #b8d6b7; */
     color: silver;
     margin: 20px;
     background-image: url("images/mainback.jpg");
@@ -41,7 +41,7 @@ body {
 }
 
 .custom-table th {
-    /*background-color: #beecbd; /* Light silver background for header 
+    /*
     background-image: url("images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;*/
@@ -72,7 +72,7 @@ header {
     line-height: 12rem;
     border-radius: 45%;
     font-size: 2rem;
-    color: #fff;
+    color: rgb(219, 239, 252);
     text-align: center;
     background-image: url("images/background.jpg");
     background-repeat: no-repeat;
@@ -87,7 +87,7 @@ header {
 }
 
 footer {
-    background-color: rgb(105, 151, 105); /* Light green background */
+    background-color: rgb(70, 70, 70); 
     color: #fff;
     text-align: center;
     padding: 10px 0;
