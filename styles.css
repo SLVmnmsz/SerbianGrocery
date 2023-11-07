@@ -11,9 +11,9 @@ body {
     /*background-color: #b8d6b7; /* Light silver background */
     color: silver;
     margin: 20px;
-    background-image: url("images/background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url("images/mainback.jpg");
+    /*background-repeat: no-repeat;
+    background-size: cover;*/
 }
 .welcomemessage {
     color: lightskyblue;
@@ -25,6 +25,7 @@ body {
 .custom-table {
     width: 100%; /* Make the table take full width */
     border-collapse: collapse; /* Remove default spacing between table cells */
+    
 }
 .column1 {
     width: 5%; /* Adjust width of the first column */
@@ -40,21 +41,22 @@ body {
 }
 
 .custom-table th {
-    /*background-color: #beecbd; /* Light silver background for header */
+    /*background-color: #beecbd; /* Light silver background for header 
     background-image: url("images/background.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
+    background-color: rgb(70, 70, 70);
 }
 
 .tbody {
-    background-image: url("images/background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url("images/mainback.jpg");
+   /* background-repeat: no-repeat;*/
+    /*background-size: cover;*/
     letter-spacing: 2px;
     font-size: large;
     color: darkcyan;
     /*background-color: rgb(105, 151, 105);*/
-    text-shadow: 1px 0 lightskyblue, -1px 0 lightskyblue, 0 1px lightskyblue, 0 -1px lightskyblue,
+    text-shadow: 0.5px 0 lightskyblue, -0.5px 0 lightskyblue, 0 0.5px lightskyblue, 0 -0.5px lightskyblue,
                1px 1px lightskyblue, -1px -1px lightskyblue, 1px -1px lightskyblue, -1px 1px lightskyblue;
 }
 
