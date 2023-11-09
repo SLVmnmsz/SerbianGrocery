@@ -8,10 +8,10 @@ body {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    /*background-color: #b8d6b7; */
+    background-color: rgb(41, 38, 38); 
     color: silver;
     margin: 20px;
-    background-image: url("images/mainback.jpg");
+   /* background-image: url("images/mainback.jpg");
     /*background-repeat: no-repeat;
     background-size: cover;*/
 }
